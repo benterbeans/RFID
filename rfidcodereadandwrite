@@ -1,0 +1,9 @@
+import RPi.GPIO as GPIO #Raspberry Pi GPIO to connect to the reader and writer
+from mfrc522 import SimpleMFRC522#library of the RC522
+
+rfid = SimpleMFRC522()
+
+while True:
+    id, text = rfid.read()
+    print(id)
+    print(text)
