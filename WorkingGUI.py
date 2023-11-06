@@ -13,7 +13,7 @@ root.title("RFID Card Management System")
 
 # Function to verify identity based on occupation
 def verify_identity(occupation):
-    verification_id = simpledialog.askstring(f"Enter {occupation} Verification ID", f"Enter your {occupation} verification ID ({occupation[0]}123456{occupation[-1]}):")
+    verification_id = simpledialog.askstring(f"Enter {occupation} Verification ID", f"Enter your {occupation} verification ID ({occupation[0]}XXXXXX{occupation[-1]}) and scan RFID card/tag after pressing ENTER or Clicking the OK button:")
     if (
         len(verification_id) == 8
         and verification_id[0] == occupation[0]
